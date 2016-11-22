@@ -14,12 +14,12 @@
 
 * ** Download Source Code **
 ```bash
-> git clone git@bitbucket.org:alchimiadev/api.git
+> git clone https://github.com/rabrux/api-boilerplate.git
 ```
 
 * ** Go to Source Code Directory **
 ```bash
-> cd api
+> cd api-boilerplate
 ```
 
 * ** Installing NPM Dependencies **

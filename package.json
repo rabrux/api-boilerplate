@@ -1,0 +1,44 @@
+{
+  "name": "rest-api-bootstrap",
+  "version": "0.0.0",
+  "description": "Alchimia Labs REST API Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "coffee ./src/api.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rabrux/api-boilerplate"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "express",
+    "jwt",
+    "boilerplate",
+    "coffee"
+  ],
+  "private": true,
+  "author": "Alchimia Labs <labs@alchimia.mx>",
+  "license": "MIT",
+  "homepage": "https://github.com/rabrux/api-boilerplate#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jwt-simple": "^0.5.0",
+    "md5": "^2.2.1",
+    "moment-timezone": "^0.5.5",
+    "mongoose": "^4.6.3",
+    "morgan": "^1.7.0",
+    "nodemailer": "^2.6.4",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.1.0",
+    "randomstring": "^1.1.5",
+    "validator": "^6.0.0",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.2"
+  }
+}

@@ -1,0 +1,7 @@
+[
+  "/api/authenticate",
+  "/api/verify/:hash",
+  "/api/recovery",
+  "/api/resend",
+  "/api/passwd"
+]

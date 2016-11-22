@@ -2,9 +2,7 @@ module.exports = ( router, schemas ) ->
 
   router.post '/signup', ( req, res ) ->
     if !req.body.username or !req.body.password
-      res.send
-        success : false
-        err     : 'INVALID_DATA'
+      res.status( 400 ).send 'INVALID_DATA'
     else
       newUser = new schemas.User( req.body )
 
@@ -13,11 +11,7 @@ module.exports = ( router, schemas ) ->
         if err
           switch err.code
             when 11000
-              return res.send
-                success : false
-                err     : 'DUPLICATE_USER'
+              return res.status( 400 ).send 'DUPLICATE_USER'
             else
-              return res.send { success: false, err: err }
-        res.send
-          success : true
-          code    : 'SUCCESSFULLY_CREATE_USER'
+              return res.status( 400 ).send err
+        res.status( 201 ).send newUser

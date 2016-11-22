@@ -1,6 +1,6 @@
 nodemailer   = require 'nodemailer'
 emailConfig  = require '../conf/email.json'
-transporter  = nodemailer.createTransport emailConfig
+transporter  = nodemailer.createTransport emailConfig.login
 
 
 module.exports = ( options, callback ) ->

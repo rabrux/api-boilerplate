@@ -1,4 +1,5 @@
 [
+  "/api/signup",
   "/api/authenticate",
   "/api/verify/:hash",
   "/api/recovery",
